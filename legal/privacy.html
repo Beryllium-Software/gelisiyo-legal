@@ -3,90 +3,113 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gelisiyo — Gizlilik Politikası</title>
+    <title>Gelişiyo — Gizlilik Politikası</title>
     <style>
-      :root {
-        color-scheme: light dark;
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-        line-height: 1.55;
-      }
-      body {
-        max-width: 44rem;
-        margin: 2rem auto;
-        padding: 0 1.25rem 3rem;
-      }
-      h1 {
-        font-size: 1.45rem;
-      }
-      h2 {
-        font-size: 1.1rem;
-        margin-top: 1.75rem;
-      }
-      .note {
-        padding: 0.75rem 1rem;
-        border-radius: 8px;
-        background: rgba(124, 58, 237, 0.12);
-        margin-bottom: 1.5rem;
-      }
-      a {
-        color: #7c3aed;
-      }
+      :root { color-scheme: light dark; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; line-height: 1.55; }
+      body { max-width: 44rem; margin: 2rem auto; padding: 0 1.25rem 3rem; }
+      h1 { font-size: 1.45rem; }
+      h2 { font-size: 1.1rem; margin-top: 1.75rem; }
+      .meta { color: #6b7280; font-size: 0.95rem; }
+      a { color: #7c3aed; }
+      ul { padding-left: 1.25rem; }
     </style>
   </head>
   <body>
-    <p><a href="../index.html">← Yasal bilgiler</a></p>
+    <p><a href="../index.html">← Yasal bilgiler</a> · <a href="en/privacy.html">English</a> · <a href="hesap-sil.html">Hesap silme</a></p>
     <h1>Gizlilik Politikası</h1>
-    <p class="note">
-      <strong>Taslak:</strong> Bu metni yayımlamadan önce iş modelinize, veri işleme
-      süreçlerinize ve geçerli mevzuata göre güncelleyin; gerekirse hukuk danışmanlığı alın.
-    </p>
-    <p><strong>Yürürlük tarihi:</strong> [TARİH]</p>
-    <p><strong>Veri sorumlusu:</strong> [ŞİRKET / İLETİŞİM ADRESİ]</p>
-
-    <h2>1. Toplanan veriler</h2>
-    <p>
-      Gelisiyo uygulaması, hizmeti sunmak için hesap bilgileri (ör. e-posta), çocuk ve aileye
-      ilişkin sizin girdiğiniz sağlık/gelişim notları, uygulama kullanımına bağlı teknik
-      veriler ve (açık izin verdiyseniz) bildirim token’ları gibi verileri işleyebilir.
+    <p class="meta"><strong>Yürürlük:</strong> 13 Kasım 2026</p>
+    <p class="meta">
+      <strong>Veri sorumlusu:</strong> Burcu Öztürk Beryllium Software.<br />
+      <strong>Adres:</strong> Kızılırmak Mah. Dumlupınar Bulvarı No:9A YDA Center Daire 158, Çankaya/Ankara 06530<br />
+      <strong>İletişim:</strong> <a href="mailto:info@berylliumsoftware.com">info@berylliumsoftware.com</a>
     </p>
 
-    <h2>2. İşleme amaçları</h2>
+    <h2>1. Kapsam</h2>
     <p>
-      Veriler; hesabın oluşturulması ve yönetilmesi, uygulama özelliklerinin sunulması,
-      güvenlik, hata giderme ve yasal yükümlülüklerin yerine getirilmesi amacıyla işlenir.
+      Bu politika, Gelişiyo mobil uygulamasını kullanırken kişisel verilerinizin işlenmesini açıklar.
+      Uygulama ebeveynlere çocuk gelişimini takip etmede yardımcı olur; tıbbi teşhis veya acil müdahale yerine geçmez.
     </p>
 
-    <h2>3. Hukuki sebepler</h2>
+    <h2>2. Topladığımız veriler</h2>
+    <ul>
+      <li><strong>Hesap:</strong> e-posta, kimlik doğrulama bilgileri (Supabase Auth), ad ve soyad, doğum tarihi, profil cinsiyeti, dil ve tema tercihleri.</li>
+      <li><strong>Aile ve çocuk:</strong> sizin girdiğiniz çocuk adı, doğum tarihi, cinsiyet; aile üyelikleri ve roller; isteğe bağlı çocuk fotoğrafı.</li>
+      <li><strong>Uygulama içeriği:</strong> notlar, takip kayıtları (uyku, beslenme, büyüme ölçüleri, aşı, diş, ilkler, kelime, güvenlik, gelişim anketi vb.), favoriler.</li>
+      <li><strong>Akış (içerik):</strong> yayınlanmış makale/anket/medya görüntüleme; hangi içeriklerin görüldüğüne dair teknik kayıtlar.</li>
+      <li><strong>Fotoğraf ve medya:</strong> yüklediğiniz görseller ve videolar (ör. profil ve “ilkler”).</li>
+      <li><strong>Yapay zekâ sohbeti:</strong> sohbet mesajlarınız ve yanıt üretmek için kullanılan çocuk/aile bağlamı (aşağıdaki §5).</li>
+      <li><strong>Bildirimler:</strong> push bildirimi için cihaz token’ı (izin verdiyseniz); gelen kutusu kayıtları.</li>
+      <li><strong>Teknik:</strong> güvenlik ve kötüye kullanımın önlenmesi için gerekli teknik kayıtlar.</li>
+    </ul>
+
+    <h2>3. İşleme amaçları</h2>
+    <ul>
+      <li>Hesap oluşturma, oturum açma ve hizmet sunumu</li>
+      <li>Not, takip, anket ve içerik özelliklerinin çalışması</li>
+      <li>Kişiselleştirilmiş Akış ve yaş bandına uygun içerik</li>
+      <li>AI destekli sohbet (sınırlı kullanım ve feragatname ile)</li>
+      <li>Bildirim gönderimi (izinle)</li>
+      <li>Güvenlik, hata giderme ve yasal yükümlülükler</li>
+    </ul>
+
+    <h2>4. Hukuki sebepler (KVKK)</h2>
     <p>
-      KVKK ve ilgili mevzuat kapsamında; sözleşmenin ifası, meşru menfaat, açık rıza veya
-      hukuki yükümlülük çerçevesinde işleme dayanakları tanımlanmalıdır. [Buraya özgün
-      metninizi ekleyin.]
+      Veriler; sözleşmenin kurulması ve ifası, veri sorumlusunun meşru menfaati, açık rızanız (ör. push bildirimi,
+      isteğe bağlı özellikler) ve hukuki yükümlülükler kapsamında işlenir. Özel nitelikli veri niteliği taşıyabilecek
+      sağlık/gelişim notlarını yalnızca hizmeti kullanmak için siz girersiniz.
     </p>
 
-    <h2>4. Saklama süresi</h2>
+    <h2>5. Yapay zekâ ve OpenAI</h2>
     <p>
-      Veriler, hizmet süresi ve yasal zamanaşımı süreleriyle orantılı olarak saklanır.
-      Hesap silme talebinde makul süre içinde silme veya anonimleştirme süreçleri uygulanır.
+      Gelişiyo’daki isteğe bağlı sohbet özelliği, yanıt üretmek üzere mesajlarınızı ve seçtiğiniz çocuk/aile bağlamını
+      (ör. yaş, gelişim ve sizin girdiğiniz sağlık/gelişim kayıtları) üçüncü taraf yapay zekâ sağlayıcısı
+      <strong>OpenAI</strong>’ye aktarabilir. Aktarım, sohbet yanıtını oluşturmak içindir; reklam amacıyla yapılmaz.
+      AI çıktıları tıbbi tavsiye veya teşhis niteliği taşımaz ve hatalı veya eksik olabilir; kritik kararlar için
+      uzman görüşü alın. OpenAI’nin sunucuları Türkiye dışında bulunabilir; aktarımda HTTPS ve sözleşmesel güvenceler hedeflenir.
     </p>
 
-    <h2>5. Üçüncü taraflar</h2>
+    <h2>6. Çocuklara ilişkin veriler</h2>
     <p>
-      Altyapı (ör. barındırma, veritabanı, kimlik doğrulama) ve yapay zekâ gibi hizmetler
-      için güvenilir iş ortakları kullanılabilir. Açık rıza veya sözleşme kapsamında
-      aktarım yapıldığı yerler politikada listelenmelidir. [Örn. Supabase, Expo, OpenAI.]
+      Çocuğa ait bilgileri yalnızca ebeveyn veya yasal veli/vasi olarak siz girersiniz. Uygulama, 13 yaş altı çocukların
+      doğrudan hesap açmasını hedeflemez; Gelişiyo 18 yaş ve üzeri ebeveynler içindir. Çocuk verilerinin işlenmesi
+      ebeveyn hesabı ve aile paylaşımı kurallarına tabidir.
     </p>
 
-    <h2>6. Haklarınız</h2>
+    <h2>7. Üçüncü taraflar ve aktarım</h2>
+    <p>Hizmet sağlayıcılarımız (sözleşmesel veri işleyen) örneğin:</p>
+    <ul>
+      <li><strong>Supabase</strong> — veritabanı, kimlik doğrulama, dosya depolama (AB, eu-west-1)</li>
+      <li><strong>Expo / Apple / Google</strong> — uygulama dağıtımı, push altyapısı, isteğe bağlı Google ile giriş</li>
+      <li><strong>OpenAI</strong> — AI sohbet işleme (yukarıdaki §5)</li>
+    </ul>
     <p>
-      KVKK kapsamında; erişim, düzeltme, silme, itiraz, veri taşınabilirliği ve şikâyet
-      haklarına ilişkin talepler için <a href="mailto:[DESTEK_E_POSTA]">[DESTEK_E_POSTA]</a>
-      adresinden bize ulaşabilirsiniz.
+      Sunucular Türkiye, AB veya diğer bölgelerde bulunabilir; aktarımda uygun güvenlik önlemleri ve sözleşmeler hedeflenir.
     </p>
 
-    <h2>7. Güncellemeler</h2>
+    <h2>8. Saklama</h2>
     <p>
-      Bu politika güncellendiğinde sayfada yürürlük tarihi değiştirilir; önemli
-      değişikliklerde uygulama içi veya e-posta ile bilgilendirme yapılabilir.
+      Veriler, hesabınız aktif olduğu sürece ve yasal saklama süreleri boyunca tutulur. Hesap silme veya veri talebinde
+      KVKK’daki sürelere uygun olarak silme veya anonimleştirme uygulanır; yedeklerde kısa süreli kalıntılar mümkündür.
+      Ayrıntı için <a href="hesap-sil.html">Hesap ve veri silme</a> sayfasına bakın.
+    </p>
+
+    <h2>9. Haklarınız ve hesap silme</h2>
+    <p>
+      KVKK kapsamında erişim, düzeltme, silme, itiraz ve şikâyet haklarınızı
+      <a href="mailto:info@berylliumsoftware.com">info@berylliumsoftware.com</a> üzerinden kullanabilirsiniz.
+      Uygulama içi <strong>Ayarlar → Yasal ve veri → Hesap ve veri talepleri</strong> bölümünden hazır e-posta taslağı ile de talep iletebilirsiniz.
+      Adım adım süreç: <a href="hesap-sil.html">Hesap ve veri silme</a>.
+    </p>
+
+    <h2>10. Güvenlik</h2>
+    <p>
+      Erişim kontrolü, aktarımda şifreleme (HTTPS), rol tabanlı yetkilendirme ve asgari veri ilkesi uygulanır.
+      Hiçbir sistem %100 güvenli değildir; şüpheli durumları bize bildirin.
+    </p>
+
+    <h2>11. Değişiklikler</h2>
+    <p>
+      Bu sayfa güncellendiğinde yürürlük tarihi değişir. Önemli değişikliklerde uygulama veya e-posta ile bilgilendirme yapılabilir.
     </p>
   </body>
 </html>
